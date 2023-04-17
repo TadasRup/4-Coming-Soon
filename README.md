@@ -21,7 +21,7 @@ Design: [Coming soon](https://cdn.discordapp.com/attachments/850245533838868480/
 ## 🎯 Project features/goals
 
 -   Github pages
--git branch
+-   git branch
 -   responsive design
 -   CSS animation
 -   form
