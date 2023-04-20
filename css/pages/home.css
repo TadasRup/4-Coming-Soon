@@ -10,16 +10,83 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 .logo {
-width: 50px;
+width: 3rem;
 }
 
 .main-title {
-font-size: 70px;
+font-size: 4.5rem;
 text-align: center;
 text-transform: uppercase;
 }
 
 .main-description {
-font-size: 20px;
+font-size: 1.3rem;
 text-align: center;
+}
+
+.footer.container{
+    padding-top: 0;
+}
+
+.row.socials {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.row.socials > a {
+
+height: 2.5em;
+width:  2.5em;
+line-height: 2.5rem;
+text-align: center;
+color: #fff;
+text-decoration: none;
+border-radius: 50%;
+transition: all 5s, background-color 5s;
+}
+
+.row.socials > a:hover {
+    background-color: #fff;
+    color: #03a9fc;
+    transition: all 1s;
+
+}
+
+footer.container > .row-short {
+    gap: 0;
+    color: #fffb;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer > .row-short-a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-trio > p::after {
+    content: '';
+    display: inline-block;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #fff;
+}
+
+.text-trio > p:last-child::after {
+    display: none;
+}
+
+@media (min-width: 44rem) {
+    .text-trio {
+        display: flex;
+        gap: 1.7 rem;
+    }
 }
