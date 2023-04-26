@@ -1,0 +1,49 @@
+
+.progress-bar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.progress-bar > .top {
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar > .top > .label {
+}
+.progress-bar > .top > .value {
+}
+.progress-bar > .bottom {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #ccc;
+}
+.progress-bar > .bottom > .progress {
+    height: 100%;
+    width: 90%;
+}
+.progress-bar .progress > .bar {
+    background-color: #03a9f3;
+    height: 100%;
+    width: 0;
+    /* animation: loading 1s linear 2s infinite forwards; */
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    /* animation-play-state: paused; */
+}
+/* .progress-bar:hover .progress > .bar {
+    animation-play-state: running;
+} */
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

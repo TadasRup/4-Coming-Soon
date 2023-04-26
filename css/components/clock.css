@@ -1,0 +1,32 @@
+.clock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+}
+.clock > .time {
+    width: 25%;
+}
+.clock .value {
+    font-weight: bold;
+    line-height: 1em;
+}
+.clock .label {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 44rem) {
+    .clock > .time {
+        width: 50%;
+    }
+}
+
+@media (max-width: 24rem) {
+    .clock > .time {
+        font-size: 4rem;
+    }
+}

@@ -3,22 +3,105 @@
 @import '../base/layout.css';
 
 /* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
 
 /* components */
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
 
-/* CUSTOM STYLE BELOW THIS COMMENT LINE */
+ /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+.hero {
+    background-image: url(../../img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
 .logo {
-width: 50px;
+    width: 3rem;
 }
-
 .main-title {
-font-size: 70px;
-text-align: center;
-text-transform: uppercase;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-description {
+    font-size: 1.3rem;
+    text-align: center;
 }
 
-.main-description {
-font-size: 20px;
-text-align: center;
+footer.container {
+    padding-top: 0;
+}
+.row.socials {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em 0;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+.row.socials > a {
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: color 5s, background-color 5s;
+}
+.row.socials > a:hover {
+    background-color: #fff;
+    color: #03a9f3;
+    transition: all 1s;
+}
+
+footer.container > .row-short {
+    gap: 0;
+    color: #fffb;
+    font-size: 1.1rem;
+    text-align: center;
+}
+footer > .row-short a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-trio > p {
+    position: relative;
+}
+.text-trio > p::after {
+    content: '';
+    display: none;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -0.9rem;
+    transform: translateY(-50%);
+}
+.text-trio > p:last-child::after {
+    display: none;
+}
+
+@media (min-width: 44rem) {
+    .text-trio {
+        display: flex;
+        gap: 1.7rem;
+    }
+    .text-trio > p::after {
+        display: block;
+    }
 }

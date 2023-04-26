@@ -1,49 +1,54 @@
 .container {
     width: 100%;
-    padding: 60px 0;
+    padding: 3.5rem 0;
 }
 
 .container > .row-short {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    width: 600px;
-    margin: 0 calc(50% - 300px);
+    gap: 2.3rem;
+    width: 38rem;
+    margin: 0 calc(50% - 19rem);
 }
 .container > .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px 10%;
-    width: 1000px;
-    margin: 0 calc(50% - 500px);
+    justify-content: center;
+    gap: 3.8rem 0;
+    width: 62rem;
+    margin: 0 calc(50% - 31rem);
 }
 .container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     width: 50%;
 }
 .column.right-column {
     width: 40%;
+    margin-left: auto;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68rem) {
     .container > .row {
-        width: 800px;
-        margin: 0 calc(50% - 400px);
+        width: 50rem;
+        margin: 0 calc(50% - 25rem);
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56rem) {
     .container > .row {
-        width: 600px;
-        margin: 0 calc(50% - 300px);
+        width: 38rem;
+        margin: 0 calc(50% - 19rem);
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 44rem) {
     .container > .row,
     .container > .row-short {
-        width: 400px;
-        margin: 0 calc(50% - 200px);
+        width: 25rem;
+        margin: 0 calc(50% - 12.5rem);
     }
     .container .column,
     .column.right-column {
@@ -51,10 +56,10 @@
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 28rem) {
     .container {
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
     }
 
     .container > .row,
