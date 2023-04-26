@@ -15,15 +15,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3.8rem 10%;
+    gap: 3.8rem 0;
     width: 62rem;
     margin: 0 calc(50% - 31rem);
 }
 .container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     width: 50%;
-    margin-left: auto;
 }
-
 .column.right-column {
     width: 40%;
     margin-left: auto;
