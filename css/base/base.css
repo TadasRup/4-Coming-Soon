@@ -1,3 +1,10 @@
+:root {
+    --blue-color: #03a9f3
+    --secondary-color: #033543
+    --size-min: 15px
+    --size-default: 20px
+}
+
 body,
 body * {
     margin: 0;
